@@ -41,10 +41,25 @@ Spring Boot backend application that integrates with the GitHub REST API to fetc
 
 ### 1️⃣ Clone Project
 
-```bash
+
 git clone <your-repo-url>
 cd github-searcher
 2️⃣ Configure PostgreSQL
+## Configuration
+
+This project uses environment variables for secure configuration.
+
+Set the following before running:
+
+### Windows (PowerShell)
+
+$env:DB_PASSWORD="your_postgres_password"
+$env:GITHUB_TOKEN="your_github_token"
+
+### macOS / Linux
+
+export DB_PASSWORD=your_postgres_password
+export GITHUB_TOKEN=your_github_token
 
 Create database:
 
